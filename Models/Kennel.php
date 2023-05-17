@@ -5,6 +5,14 @@ class Kennel extends Products{
     public $caracteristics;  
     public $material;
     public $size;
-    public $name_model;
-    public $price;
+
+    function __construct($_name, $_price, $_category, $_caracteristics, $_material, $_size) {
+        parent::__construct($_name, $_price, $_category);
+        $this->caracteristics = $_caracteristics;
+        $this->material = $_material;
+        $this->size = $_size;
+    }
+    
+    
+   
 }
