@@ -1,6 +1,5 @@
 <?php
-include_once __DIR__ . '/Categories.php';  //includo la classe categorie
-
+include_once __DIR__ . '/Categories.php';  //includo la classe Categories
 //la classe prodotti avrà tra le variabili anche la categoria che a sua volta sarà una classe
 class Products {
    public $name;
@@ -15,8 +14,19 @@ class Products {
         $this->img = $_img;
     }
 
-}
+    
+    public function getAllFields(){
+       $fields = [
+        'name' => $this->name,
+        'price' => $this->price,
+        'category' => $this->category,
+        'image' => $this->img
+       ];
+       return $fields;
+       
 
+       }
+}
 
 
 ?>

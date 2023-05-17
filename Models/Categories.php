@@ -4,9 +4,10 @@
 class Categories{
     public $category;
 
-    function __construct($category) { //in questo caso o cane o gatto 
-        $this->category = $category;
+    function __construct($_category) { //in questo caso o cane o gatto 
+        $this->category = $_category;
     }
 
 }
+
 

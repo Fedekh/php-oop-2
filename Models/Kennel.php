@@ -1,5 +1,4 @@
 <?php
-include_once __DIR__ . '/Products.php';
 
 class Kennel extends Products{
     public $caracteristics;  

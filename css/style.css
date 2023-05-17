@@ -1,0 +1,45 @@
+body{
+    background-color: #333;
+    
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    background-color: #333;
+}
+
+h1{
+    color: #ed6b09;
+    font-size: 3rem;
+    margin: 20px 0;
+    
+}
+
+.card{
+    background-color: rgb(44, 222, 115);
+    width: calc(100% / 4 - 20px);
+}
+
+
+.images{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h5,span{
+    color: #96077c;
+}

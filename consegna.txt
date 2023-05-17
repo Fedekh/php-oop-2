@@ -7,5 +7,5 @@
 
 
    product è il padre
-   categorie ( cane e gatto) figli è quindi un estensione di product legame IS-A
-   ogni cano e gatto importa cibo,giochi,cucce quindi è un legame HAS-A
+   categorie ( cane e gatto) figli è quindi un  legame IS-A
+   ogni cano e gatto importa cibo,giochi,cucce estensione di product  quindi è un legame HAS-A

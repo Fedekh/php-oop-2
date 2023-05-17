@@ -1,6 +1,5 @@
 <?php
 
-include_once __DIR__ . '/Products.php';
 
 class Food extends Products{
     public $type;
@@ -12,7 +11,17 @@ class Food extends Products{
         $this->caracteristics = $_caracteristics;
     }
            
-    
+    public function getAllFields(){
+       $fields = [
+        'name' => $this->name,
+        'price' => $this->price,
+        'category' => $this->category,
+        'image' => $this->img,
+        'type' => $this->type,
+        'caracteristics' => $this->caracteristics
+       ];
+       return $fields;
+       
 
-    
+       }   
 }
