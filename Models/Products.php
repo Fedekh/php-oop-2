@@ -14,18 +14,7 @@ class Products {
         $this->img = $_img;
     }
 
-    
-    public function getAllFields(){
-       $fields = [
-        'name' => $this->name,
-        'price' => $this->price,
-        'category' => $this->category,
-        'image' => $this->img
-       ];
-       return $fields;
-       
-
-       }
+   
 }
 
 

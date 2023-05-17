@@ -40,6 +40,12 @@ h1{
     object-fit: contain;
 }
 
-h5,span{
-    color: #96077c;
+
+span{
+    color: #262125;
+}
+
+h5, .caract{
+    color: #de0000;
+    text-decoration: underline;
 }

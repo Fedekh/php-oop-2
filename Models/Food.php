@@ -2,26 +2,15 @@
 
 
 class Food extends Products{
-    public $type;
     public $caracteristics;  
+    public $material;
+    public $size;
 
-    function __construct($_name, $_price, Categories $_category,$_img, $_type, $_caracteristics) {
+    function __construct($_name, $_price, Categories $_category,$_img, $_caracteristics, $_material, $_size) {
         parent::__construct($_name, $_price, $_category,$_img);
-        $this->type = $_type;
         $this->caracteristics = $_caracteristics;
+        $this->material = $_material;
+        $this->size = $_size;
     }
-           
-    public function getAllFields(){
-       $fields = [
-        'name' => $this->name,
-        'price' => $this->price,
-        'category' => $this->category,
-        'image' => $this->img,
-        'type' => $this->type,
-        'caracteristics' => $this->caracteristics
-       ];
-       return $fields;
-       
-
-       }   
+   
 }

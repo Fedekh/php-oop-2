@@ -7,9 +7,11 @@
         </div>
         <div class="card-body">
           <h5 class="card-title"><?php echo $product->name; ?></h5>
-          <p class="card-text"><span>Prezzo : </span> <?php echo $product->price; ?>€</p>
-          <p class="card-text"><span>Caratteristiche : </span> <?php echo $product->caracteristics; ?></p>
-          <p class="card-text"><span>Categoria : </span> <?php echo $product->category->category; ?></p>
+          <p class="card-text"><span>Prezzo : </span> <span class="caract"><?php echo $product->price; ?>€</span></p>
+          <p class="card-text"><span>Caratteristiche : </span><span class="caract"> <?php echo $product->caracteristics; ?></span></p>
+          <p class="card-text"><span>Materiale : </span> <span class="caract"><?php echo $product->material; ?></span></p>
+          <p class="card-text"><span>Dimensione : </span> <span class="caract"><?php echo $product->size; ?></span></p>
+          <p class="card-text"><span>Categoria : </span> <span class="caract"><?php echo $product->category->category; ?></span></p>
         </div>
       </div>
     <?php }; ?>
