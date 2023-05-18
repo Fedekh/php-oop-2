@@ -4,18 +4,18 @@ body{
 }
 
 .wrapper{
-    height: 100vh;
     width: 100%;
 }
 
 header{
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     right: 0;
     z-index: 17;
     background-color: #333;
 }
+
 
 h1{
     color: #ed6b09;
@@ -25,7 +25,7 @@ h1{
 }
 
 .card{
-    background-color: rgb(44, 222, 115);
+    background-color: rgb(122 136 235);
     width: calc(100% / 4 - 20px);
 }
 
@@ -47,7 +47,17 @@ span{
     color: #262125;
 }
 
-h5, .caract{
+h4, .caract{
     color: #de0000;
     text-decoration: underline;
+}
+
+.discount{
+    color: #60f609;
+    font-weight: bold;
+}
+
+.error{
+    color: rgb(212, 234, 17);
+    font-weight: bold;
 }
