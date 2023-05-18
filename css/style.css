@@ -9,9 +9,11 @@ body{
 }
 
 header{
-    position: sticky;
+    position: fixed;
+    left: 0;
     top: 0;
-    z-index: 7;
+    right: 0;
+    z-index: 17;
     background-color: #333;
 }
 
