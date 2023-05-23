@@ -1,11 +1,11 @@
 <?php
 
 $products = [
-    new Toys('Pallina', 10, new Categories('Cane', ' <i class="fa-solid fa-dog fa-bounce" style="color: #1101e9;"></i>'),  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Uw_q6kNHzyBMfCZlpLGmrZYw7x4plfyqGE_3q--UMJ_zF2xZ6VbC4zD3y4RJu10TdNc&usqp=CAU', 20,'Rotonda', 'Plastica', 'Piccola'), 
+    new Toys('Pallina', 10, new Categories('Cane', ' <i class="fa-solid fa-dog fa-bounce" style="color: #1101e9;"></i>'),  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Uw_q6kNHzyBMfCZlpLGmrZYw7x4plfyqGE_3q--UMJ_zF2xZ6VbC4zD3y4RJu10TdNc&usqp=CAU','dsd','Rotonda', 'Plastica', 'Piccola'), 
     new Accessories('Guinzaglio', 10, new Categories('Cane', ' <i class="fa-solid fa-dog fa-bounce" style="color: #1101e9;"></i>'), 'https://www.delashop.it/wp-content/uploads/2020/06/M_guinzaglioazzurro_picc.jpg',10, 'Resistente', 'Nylon', 'Regolabile'),
     new Food('Crocchetta', 10, new Categories('Cane', ' <i class="fa-solid fa-dog fa-bounce" style="color: #1101e9;"></i>'), 'https://www.petsplanet.it/713-full_default/green-for-dog-crocchette-per-tutti-i-cani-4-kg.jpg',45, 'Senza glutine', 'Nutriente', 'Piccola', '10-12-2024'),
     new Kennel('Cuccia', 10, new Categories('Cane', ' <i class="fa-solid fa-dog fa-bounce" style="color: #1101e9;"></i>'), 'https://www.spesagodina.it/web/wp-content/uploads/2022/03/8410650164076.jpg',22, 'Confortevole', 'Tessuto', 'Grande'),
-    new Toys('Palletta', 10, new Categories('Gatto', ' <i class="fa-solid fa-cat fa-bounce" style="color: #de4917;"></i>'), 'https://m.media-amazon.com/images/I/81C56y96syL._AC_SY355_.jpg', '','Rimbalzante', 'Gomma', 'Piccola'),
+    new Toys('Palletta', 10, new Categories('Gatto', ' <i class="fa-solid fa-cat fa-bounce" style="color: #de4917;"></i>'), 'https://m.media-amazon.com/images/I/81C56y96syL._AC_SY355_.jpg', '0','Rimbalzante', 'Gomma', 'Piccola'),
     new Accessories('Mantello', 10, new Categories('Gatto', ' <i class="fa-solid fa-cat fa-bounce" style="color: #de4917;"></i>'), 'https://thumbs.dreamstime.com/z/gatto-del-supereroe-whiskas-scozzese-con-un-mantello-e-una-maschera-blu-il-concetto-di-eccellente-capo-131186961.jpg','', 'Caldo', 'Pelliccia', 'Regolabile'),
     new Food('Crocchetta', 10, new Categories('Gatto ', '<i class="fa-solid fa-cat fa-bounce" style="color: #de4917;"></i>'), 'https://www.spesagodina.it/web/wp-content/uploads/2022/03/8410650164076.jpg','', 'High Protein', 'Digestibile', 'Piccola', '10-12-2023'),
     new Kennel('Cuscino', 10, new Categories('Gatto', ' <i class="fa-solid fa-cat fa-bounce" style="color: #de4917;"></i>'), 'https://m.media-amazon.com/images/I/71EcMOqPgLL._AC_SY355_.jpg',5, 'Comodo', 'Morbido', 'Medio'),

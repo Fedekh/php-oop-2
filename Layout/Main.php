@@ -1,7 +1,7 @@
 <div class="main">
-  <div class="card-container d-flex flex-wrap gap-4">
+  <div class="card-container row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 ">
     <?php foreach ($products as $product) { ?>
-      <div class="card">
+      <div class="card m-3">
         <div class="images">
           <img class="card-img-top" src="<?php echo $product->img; ?>" alt="Card image cap">
         </div>
@@ -20,18 +20,22 @@
           <?php } ?>
           <?php
           try {
-
-            if ($product->getDiscount() !== 0 && $product->getDiscount() !== '') {
-              echo '<p class="card-text"><h5 class="discount">Sconto: ' . $product->getDiscount() . '%</h5></p>';
+            if ($product->getDiscount() > 0  && is_numeric($product->getDiscount())) {
+                echo '<p class="card-text"><h5 class="discount">Sconto: ' . $product->getDiscount() . '%</h5></p>';
+            } else {
+                throw new Exception("Valore sconto non valido.");
             }
-          } catch (Exception $e) {
+        } catch (Exception $e) {
             echo '<p class="card-text"><h5 class="error">Errore nello sconto: ' . $e->getMessage() . '</h5></p>';
-          }
+        }
+        
           ?>
+
 
           <button class="btn btn-primary my-3 px-3">ADD TO<i class="fa-solid fa-cart-shopping mx-2"></i></button>
         </div>
       </div>
     <?php }; ?>
   </div>
+
 </div>
